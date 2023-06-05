@@ -1,0 +1,21 @@
+nav {
+    display: flex; 
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    h1 {
+        margin-left: 10vw;
+        font-family: 'Monomaniac One', sans-serif;
+        cursor: pointer;
+    }
+    ul {
+        margin-right: 10vw;
+        list-style: none;
+        display: flex;
+        li {
+            margin-left: 1vw;
+            font-family: 'Questrial', sans-serif;
+            cursor: pointer;
+        }
+    }
+}

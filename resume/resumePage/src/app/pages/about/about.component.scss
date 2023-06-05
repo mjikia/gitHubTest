@@ -1,0 +1,57 @@
+.expboxone, .expboxtwo {
+    display: flex;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.expboxtwo {
+    justify-content: right;
+}
+
+#experience {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    img {
+        width: 20vw;
+    }
+}
+
+.first, .second {
+    width: 30vw;
+    h2 {
+        font-size: 2rem;
+        font-family: 'Monomaniac One', sans-serif;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-family: 'Questrial', sans-serif;
+    }
+    h4 {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    p {
+        font-size: 0.8rem;
+        font-family: 'Questrial', sans-serif;
+    }
+}
+
+.first {
+    margin-right: 10vw;
+}
+
+.second {
+    margin-left: 10vw;
+}
+
+.about {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    p {
+        font-family: 'Questrial', sans-serif;
+    }
+}
