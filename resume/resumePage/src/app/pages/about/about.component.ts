@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-about',
   template: `
-    <div>
+    <div class="container">
       <div class="about">
       <h1>About me</h1>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo optio earum ratione fuga doloremque ut repudiandae dolorem libero maxime quae! Quibusdam accusamus similique aperiam cumque, exercitationem iure reiciendis provident esse?</p>

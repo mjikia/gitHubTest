@@ -1,0 +1,60 @@
+.box {
+    height: 25vh;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    width: 35vw;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+
+}
+
+.cont {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1vh;
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .box {
+        height: 60vh;
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 90vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vh;
+        width:85vw;
+    }
+}

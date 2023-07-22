@@ -1,0 +1,26 @@
+.background {
+    background-color: #F8E5E0;
+    height: 100vh;
+    background-image: url('/assets/images/beauty-products/Leaves@1x.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .background {
+        height: 180vh;
+    }
+    .row {
+        display: flex;
+    }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .background {
+        height: 100%;
+        padding-bottom: 10vh;
+    }
+
+}

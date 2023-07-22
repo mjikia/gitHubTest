@@ -1,11 +1,12 @@
 main {
     display: flex;
-    margin-top: 10vh;
-    justify-content: center;
+    margin-top: 15vh;
     align-items: center;
     height: 80%;
     h1 {
         font-family: 'Questrial', sans-serif;
+        max-width: 30vw;
+        opacity: 90%;
     }
     #hachi {
         display: flex;
@@ -18,11 +19,11 @@ main {
             animation-name: movingBorder;
             animation-duration: 10s;
             animation-iteration-count: 10;
-            border: 3px solid black;
+            border: 3px solid white;
             margin-left: 5vw;
         }
         h3 {
-            font-size: 0.6rem;
+            font-size: 0.3rem;
             margin-left: 5vw;
             margin-top: 5vh;
         }
@@ -38,30 +39,49 @@ main {
     
     
     p {
-        max-width: 25vw;
+        max-width: 35vw;
+        font-size: 1.7rem;
         font-family: 'Questrial', sans-serif;
+        opacity: 70%;
+    }
+
+    .stacks {
+        margin-top: 20vh;
     }
     
     .stack {
         display: flex;
-        text-align: center;
-
-        h2 {
-            font-family: 'Questrial', sans-serif, 400;
+        align-items: center;
+        .stack-heading {
+            font-family: 'Questrial', sans-serif;
             font-size: 0.9rem;
+            opacity: 70%;
         }
         ul {
             list-style: none;
             list-style-type: none;
             display: flex;
-            text-align: center;
             li {
                 margin-left: 1vw;
                 font-family: 'Montserrat', sans-serif, 200;
-                opacity: 60%;
                 font-size: 0.8rem;
+                margin-bottom: -1.2vh;
+                padding-left: 1em;
+                padding-right: 1em;
+                padding-bottom: 0.5em;
+                padding-top: 0.5em;
+                border: white 1px solid;
+                background: grey;
+                color: white;
+                border-radius: 1em;
+                transition: 0.5s;
+                cursor: pointer;
             }
-            
+            li:hover {
+                background: white;
+                border: solid black 1px;
+                color: black;
+            }
         }
     }
 }
@@ -72,4 +92,59 @@ main {
     50%  {border-radius: 66% 34% 20% 80% / 73% 64% 36% 27% }
     75% {border-radius: 84% 16% 57% 43% / 34% 43% 57% 66% }
     100% {border-radius: 50% 50% 69% 31% / 50% 67% 33% 50% }
+  }
+
+  @media only screen and (max-width: 900px) and (orientation: landscape) {
+    main {
+        margin-top: 5vh;
+            h1 {
+                max-width: 60vw;
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+            #hachi {
+                img {
+                    width: 30vw;
+                }
+            }
+            #stacks {
+                margin-top: 20vh;
+            }
+        }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main-view {
+        display: flex;
+        flex-direction: column;
+    }
+
+   main {
+    margin-top: 3vh;
+    h1 {
+        max-width: 90vw;
+    }
+    p {
+        max-width: 90vw;
+        font-size: 1.2rem;
+    }
+    #hachi {
+        img {
+            width: 70vw;
+            margin-left: 0;
+        }
+        
+    }
+    .stacks {
+        margin-top: 2vh;
+    }
+    .stack {
+        ul {display: grid;
+            grid-template-columns: 1fr 1fr;}
+        
+    }
+   }
   }

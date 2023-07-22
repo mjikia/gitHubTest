@@ -1,0 +1,61 @@
+.custom-background {
+    background-color: #F49196;
+    background-image: url('/assets/images/beauty-products/Texture.svg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'montserrat', sans-serif;
+
+}
+
+.myflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-title {
+    font-family: 'Kaisei Tokumin', serif; 
+    margin-top: 2vh;
+}
+
+.my-subtitle {
+    margin-top: 2vh;
+}
+
+.trio {
+    display: flex; 
+    justify-content: space-between; 
+    width: 60vw; 
+    margin-top: 2vh; 
+    text-align: center; 
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+.custom-background {
+    height: 100vh;
+}
+.myflex {
+    margin-left: 3vw;
+}
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .myflex {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .trio {
+        width: 100%;
+    }
+
+    .custom-background {
+        height: 65vh;
+    }
+}

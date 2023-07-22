@@ -1,0 +1,41 @@
+.box {
+    width: 22vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+   .box {
+    width: 30vw;
+    height: 95vh;
+   .my-title {
+        font-size: 1rem;
+    }
+    img {
+        width: 5vw;
+    }
+    .my-description {
+        font-size: 0.8rem;
+    }
+}
+  }
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 90vw;
+        height: 40vh;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+}
+@media only screen and (max-width: 1700px) {
+    .my-title {
+        font-size: 1.5em;
+    }
+    .my-description {
+        font-size: 1em;
+    }
+
+}

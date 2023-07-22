@@ -1,0 +1,91 @@
+.wrapper-two {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+}
+
+.my-links {
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+}
+
+.para {
+    width: 25vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        margin-top: 1vh;
+        padding: 0;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+}
+
+h1 {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    opacity: 100%;
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+   .para {
+    width: 35vw;
+    font-size: 0.8rem;
+   }
+   .my-links {
+    width: 50vw;
+    margin-top: 7vh;
+   }
+  }
+
+
+@media only screen and (max-width: 600px) {
+ .wrapper-two {
+    display: flex;
+    flex-direction: column;
+ }
+ .para {
+    width: 90vw;
+}
+.my-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+    margin-top: 5vh;
+    h1 {
+        font-size: 0.9rem;
+        margin-top: 3vh;
+    }
+    ul {
+        font-size: 0.7rem;
+    }
+}
+
+.other {
+    font-size: 0.8rem;
+    height: 3vh;
+}
+}
+
+.other {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    img {
+        width: 1.2rem;
+        margin-left: 1vw;
+        cursor: pointer;
+    }
+}

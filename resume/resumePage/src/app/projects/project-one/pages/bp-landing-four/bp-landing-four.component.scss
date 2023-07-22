@@ -1,0 +1,31 @@
+.carousel {
+    background-color: #FDF7F6;
+    padding: 10vh;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel-indicators {
+    button {
+        border: solid 1px black;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .carousel {
+        background-color: #FDF7F6;
+        padding: 1vw;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+    }
+
+.testimonials {
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.9rem;
+}
+}
